@@ -6,7 +6,7 @@ const app           = express()
 const bodyParser    = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }))
 
-// defining routes in another file just make to make things cleaner
+// defining routes in another file just to make things cleaner
 const setupRoutes   = require('./routes')
 setupRoutes(app)
 
